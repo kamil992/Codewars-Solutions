@@ -17,5 +17,7 @@ public class BrokenSequenceTest {
         assertEquals(2,brokenSequence.findMissingNumber2("1 3 4 5"));
 
         assertEquals(1,brokenSequence.findMissingNumber2("2 3 4 5"));
+
+        assertEquals(0, brokenSequence.findMissingNumber2(""));
     }
 }

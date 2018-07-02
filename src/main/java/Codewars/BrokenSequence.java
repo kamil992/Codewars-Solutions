@@ -4,7 +4,7 @@ public class BrokenSequence {
     public static void main(String[] args) {
         BrokenSequence brokwenSequence = new BrokenSequence();
 
-        System.out.println(brokwenSequence.findMissingNumber("1 2 3 5"));
+        System.out.println(brokwenSequence.findMissingNumber2(""));
 
     }
 
@@ -23,6 +23,11 @@ public class BrokenSequence {
     }
 
     public int findMissingNumber2(String sequence) {
+
+        if(sequence.length() == 0){
+            return 0;
+        }
+
         String[] strNums = sequence.split(" ");
         int[] arrInts = new int[strNums.length];
 
